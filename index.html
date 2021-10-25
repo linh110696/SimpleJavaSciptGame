@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chore Door!</title>
+    <link href="./bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <div class="row justify-content-center bg-white">
+      <img src="images/logo.svg" alt="Chore door">
+    </div>
+    <div id="instruction" class="row justify-content-center">
+      <p class="col-12"><img src="images/star.svg">Instruction<img src="images/star.svg"></p><br>
+      <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+        <ol>
+          <li>Hiding behind one of these doors is ChoreBot.</li>
+          <li>Your mission is to open all the doors without running into the ChoreBot.</li>
+          <li>If you manage to avoid the ChoreBot until the very last door, you win!</li>
+          <li>See if can score a winning streak!</li>
+        </ol>
+      </div>
+    </div>
+    <div id="game">
+      <div id="doors" class="row justify-content-center">
+        <img src="images/closed_door.svg" id="door1" class="call_door col-3 col-md-2 col-lg-1">
+        <img src="images/closed_door.svg" id="door2" class="call_door col-3 col-md-2 col-lg-1">
+        <img src="images/closed_door.svg" id="door3" class="call_door col-3 col-md-2 col-lg-1">
+      </div>
+      <div id="button" class="justify-content-center">
+        <p>Good luck!</p>
+      </div>
+      <div id="streak_display">
+        <div id="current">
+          <p>Current streak:</p>
+          <p class="number_box" id="win_streak">0</p>
+        </div>
+        <div id="best">
+          <p>Best streak:</p>
+          <p class="number_box" id="best_streak">0</p>
+        </div>
+      </div>
+    </div>
+    <script src="jquery-3.5.1.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
